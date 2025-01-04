@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+media_folder: "public/uploads"
+public_folder: "/uploads"
+collections:
+  - name: "site"
+    label: "Site Configuration"
+    files:
+      - name: "config"
+        label: "Configuration"
+        file: "siteConfig.ts"
+        fields:
+          - { name: "brandName", label: "Brand Name", widget: "string" }
+          - { name: "logoUrl", label: "Logo URL", widget: "string" }
+          - name: "navigation"
+            label: "Navigation"
+            widget: "list"
+            fields:
+              - { name: "name", label: "Name", widget: "string" }
+              - { name: "href", label: "Href", widget: "string" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "subtitle", label: "Subtitle", widget: "string" }
