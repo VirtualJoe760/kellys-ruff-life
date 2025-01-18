@@ -1,32 +1,27 @@
-"use client"; // Ensure client-side rendering
+"use client";
 
 import { usePathname } from "next/navigation";
-import siteConfig from "../../constants/siteConfig"; // Import the siteConfig
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
+import siteConfig from "../../constants/siteConfig";
 
 export default function DesktopMenu() {
-  const pathname = usePathname(); // Get the current pathname
-  const { colors, text } = siteConfig; // Destructure colors and text from siteConfig
+  const pathname = usePathname();
+  const { text } = siteConfig;
 
   return (
     <div className="hidden sm:ml-6 sm:block">
       <div className="flex space-x-4">
         {text.navigation.map((item) => {
           const isActive = pathname === item.href;
+
           return (
             <a
               key={item.name}
               href={item.href}
               aria-current={isActive ? "page" : undefined}
-              className={classNames(
-                isActive
-                  ? `bg-[${colors.activeBg}] text-[${colors.activeText}]`
-                  : `text-[${colors.defaultText}] hover:text-[${colors.hoverText}]`,
-                "rounded-md px-3 py-2 text-sm font-medium"
-              )}
+              className={`rounded-md px-3 py-2 font-medium transition duration-200 ease-in-out ${
+                isActive ? "text-[var(--gold)]" : "text-[var(--gold)] hover:text-[var(--light-gray)]"
+              }`}
+              style={{ fontSize: siteConfig.text.navLinkTextSize }}
             >
               {item.name}
             </a>

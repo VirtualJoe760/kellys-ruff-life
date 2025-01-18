@@ -4,7 +4,6 @@ export interface Post {
     slug: string;
     slugId: string;
     date: string;
-    section: string;
     description: string;
     metaDescription: string; // Ensure this matches your frontmatter
     image: string;

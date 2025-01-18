@@ -3,13 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --background: #eed9c4;
+  --foreground: #000;
+  --white:#fff;
+  --gold: #d4af37;
+  --beige: #eed9c4;
+  --light-gray: #6699CC;
 
+}
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--white);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+h2 {
+  scroll-margin-top: 120px; /* Adjust this value based on your header height */
+  color: var(--gold);
+}
+
+.text-heading {
+  color: var(--gold);
+}
+

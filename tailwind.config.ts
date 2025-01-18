@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        activeText: "#4A4A4A",
+        defaultText: "#000000",
+        hoverText: "#007BFF",
       },
     },
   },

@@ -1,26 +1,34 @@
 backend:
   name: git-gateway
-media_folder: "public/uploads"
-public_folder: "/uploads"
+  branch: main # Branch where content is committed
+  repo: VirtualJoe760/jpsrealtor # Replace with your GitHub repo
+media_folder: "public/uploads" # Path where images are stored in your repo
+public_folder: "/uploads"      # Public URL for the folder
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: "duqgao9h8"
+    api_key: "647319725974664"
+    api_secret: "jAD_D300CJpNN1PyMmuEaWEtiGM"
+    default_transformations:
+      - quality: auto
+      - fetch_format: auto
+
 collections:
-  - name: "site"
-    label: "Site Configuration"
-    files:
-      - name: "config"
-        label: "Configuration"
-        file: "siteConfig.ts"
-        fields:
-          - { name: "brandName", label: "Brand Name", widget: "string" }
-          - { name: "logoUrl", label: "Logo URL", widget: "string" }
-          - name: "navigation"
-            label: "Navigation"
-            widget: "list"
-            fields:
-              - { name: "name", label: "Name", widget: "string" }
-              - { name: "href", label: "Href", widget: "string" }
-          - name: "hero"
-            label: "Hero Section"
-            widget: "object"
-            fields:
-              - { name: "title", label: "Title", widget: "string" }
-              - { name: "subtitle", label: "Subtitle", widget: "string" }
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "src/posts"
+    create: true
+    slug: "{{slugId}}" # Use slugId for file naming
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true, hint: "Enter the title of the blog post." }
+      - { label: "Slug ID", name: "slugId", widget: "string", required: true, hint: "SEO-friendly URL for the post." }
+      - { label: "Date", name: "date", widget: "string", required: true, hint: "Publication date in MM/DD/YYYY format." }
+      - { label: "Body", name: "body", widget: "markdown", required: true, hint: "Main content of the post in Markdown format." }
+      - { label: "Image", name: "image", widget: "image", required: true, hint: "Upload a featured image for the post." }
+      - { label: "Meta Title", name: "metaTitle", widget: "string", required: true, hint: "Title for search engine results." }
+      - { label: "Meta Description", name: "metaDescription", widget: "text", required: true, hint: "Brief description of the post." }
+      - { label: "OG Image", name: "ogImage", widget: "image", required: true, hint: "Upload an Open Graph image for social media sharing." }
+      - { label: "Image Alt Text", name: "altText", widget: "string", required: true, hint: "Describe the image for accessibility." }
+      - { label: "Keywords", name: "keywords", widget: "list", field: { label: "Keyword", name: "keyword", widget: "string" }, required: true, hint: "Main keywords for this post." }
