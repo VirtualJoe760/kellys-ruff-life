@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import siteConfig from "../../constants/siteConfig";
+import siteConfig from "@/app/constants/siteConfig";
 
 export default function DesktopMenu() {
   const pathname = usePathname();

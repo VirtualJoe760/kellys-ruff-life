@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import VariableHero from "@/components/VariableHero";
-import siteConfig from "@/constants/siteConfig";
-import BlogLists from "@/components/BlogLists";
-import { getAllPosts } from "@/utils/fetchPosts";
+import VariableHero from "../components/VariableHero";
+import siteConfig from "../constants/siteConfig";
+import BlogLists from "../components/BlogLists";
+import { getAllPosts } from "../utils/fetchPosts";
 import { Post } from "@/types/post";
 
 const BlogPage = () => {

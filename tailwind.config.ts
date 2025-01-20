@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
 
 export default {
   content: [
@@ -7,15 +8,9 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        activeText: "#4A4A4A",
-        defaultText: "#000000",
-        hoverText: "#007BFF",
-      },
-    },
+    extend: {},
   },
-  plugins: [],
+  plugins: [
+    typography, // Add the Typography plugin
+  ],
 } satisfies Config;

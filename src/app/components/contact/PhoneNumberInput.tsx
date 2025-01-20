@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { COUNTRY_CODES } from "@/constants/countryCodes";
+import { COUNTRY_CODES } from "@/app/constants/countryCodes";
 
 export default function PhoneNumberInput() {
   const [phoneNumber, setPhoneNumber] = useState("");

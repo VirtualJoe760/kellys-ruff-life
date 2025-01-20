@@ -77,39 +77,6 @@ const siteConfig = {
       heroContext: " ",
       description: " ",
     },
-    metadata: {
-      title: "Kelly's Ruff Life | Dog Walking and Sitting Information",
-      description: "Explore articles, tips, and ideas to help you create the perfect website and grow your business.",
-      keywords: [
-        "website tips",
-        "business insights",
-        "branding ideas",
-        "digital marketing",
-        "web design inspiration",
-      ],
-      openGraphAlt: "An image representing the Blog section", // Add this
-      openGraphUrl: "https://yourbrand.com/blog", // Add this
-    },
-    categories: [
-      {
-        id: "web-design",
-        title: "Web Design Tips",
-        href: "/blog/web-design-tips",
-        imageUrl: "/images/categories/web-design.jpg",
-      },
-      {
-        id: "branding-strategies",
-        title: "Branding Strategies",
-        href: "/blog/branding-strategies",
-        imageUrl: "/images/categories/branding.jpg",
-      },
-      {
-        id: "digital-marketing",
-        title: "Digital Marketing",
-        href: "/blog/digital-marketing",
-        imageUrl: "/images/categories/marketing.jpg",
-      },
-    ],
     backgroundColor: "#000000",
     textColor: "#FFFFFF",
   },  

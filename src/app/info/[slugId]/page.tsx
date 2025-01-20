@@ -1,7 +1,7 @@
 // src/app/info/[slug]/page.tsx
 
-import { getPostBySlug } from "@/utils/fetchPosts";
-import VariableHero from "@/components/VariableHero";
+import { getPostBySlug } from "@/app/utils/fetchPosts";
+import VariableHero from "@/app/components/VariableHero";
 import ReactMarkdown from "react-markdown";
 import rehypeSlug from "rehype-slug";
 import { format } from "date-fns";
@@ -57,7 +57,7 @@ export default async function PostPage({ params }: { params: { slugId: string } 
         />
 
         {/* Blog Content */}
-        <section className="container mx-auto max-w-4xl my-10 p-6 bg-gray-100 rounded-lg shadow-lg">
+        <section className="container mx-auto max-w-4xl my-10 p-6 rounded-lg shadow-lg">
           <article className="prose prose-lg max-w-none prose-h1:text-black prose-h2:text-black prose-p:text-gray-700 prose-a:text-blue-500 hover:prose-a:text-blue-700 prose-strong:text-black">
             <ReactMarkdown rehypePlugins={[rehypeSlug]}>{post.content || ""}</ReactMarkdown>
           </article>

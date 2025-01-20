@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import VariableHero from "@/components/VariableHero";
+import VariableHero from "../components/VariableHero";
 import Link from "next/link";
 
 const ServicesPage = () => {

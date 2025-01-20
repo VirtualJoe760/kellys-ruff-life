@@ -9,13 +9,20 @@
   --gold: #d4af37;
   --beige: #eed9c4;
   --light-gray: #6699CC;
+}
 
+@font-face {
+  font-family: 'Sour Gummy';
+  src: url('/fonts/SourGummy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
   color: var(--foreground);
   background: var(--white);
   font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Sour Gummy', sans-serif;
 }
 
 h2 {

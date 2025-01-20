@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import VariableHero from "@/components/VariableHero";
-import siteConfig from "@/constants/siteConfig";
+import VariableHero from "@/app/components/VariableHero";
+import siteConfig from "@/app/constants/siteConfig";
 
 const AboutPage = () => {
   const { aboutPage } = siteConfig;

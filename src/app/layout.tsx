@@ -3,13 +3,6 @@ import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/Footer";
 
-import { Sour_Gummy } from 'next/font/google';
-
-const notoSans = Sour_Gummy({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(`https://kellysrufflife.com/ || https://localhost:3000/`),
@@ -24,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={notoSans.className}>
+      <body>
         <Navbar />
         {children}
         <Footer />

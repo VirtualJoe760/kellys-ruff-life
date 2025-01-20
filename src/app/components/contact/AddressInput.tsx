@@ -1,4 +1,4 @@
-import { STATES } from "@/constants/states";
+import { STATES } from "@/app/constants/states";
 import { COUNTRIES } from "@/app/constants/countries";
 
 export default function AddressInput() {
