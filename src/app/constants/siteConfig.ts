@@ -18,7 +18,6 @@ const siteConfig = {
   text: {
     navigation: [
       { name: "About", href: "/about" },
-      { name: "Info", href: "/info" },
       { name: "Services", href: "/services" },
       { name: "Book Appointment", href: "/#book-appointment" },
     ],
@@ -27,7 +26,6 @@ const siteConfig = {
   footer: {
     mainNavigation: [
       { name: "About", href: "/about" },
-      { name: "Blog", href: "/info" },
       { name: "Services", href: "/services" },
       { name: "Book Appointment", href: "/#book-appointment" },
     ],
