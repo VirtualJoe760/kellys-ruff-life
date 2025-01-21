@@ -13,17 +13,17 @@ const cards = [
     image: "/images/misc/puppy_00001_.png",
   },
   {
-    name: "Info",
+    name: "Book an Appointment",
     description:
-      "Guide your audience through their journey, making every step seamless and rewarding.",
+      "Book an appointment for dog sitting or walking today!",
     icon: ChatBubbleBottomCenterIcon,
-    href: "/info",
+    href: "/#book-appointment",
     image: "/images/misc/puppy_00002_.png",
   },
   {
     name: "Services",
     description:
-      "Help your audience navigate their goals, maximize value, and achieve stress-free results.",
+      "Learn about my dog walking and pet sitting services.",
     icon: GlobeAmericasIcon,
     href: "/services",
     image: "/images/misc/puppy_00003_.png",
