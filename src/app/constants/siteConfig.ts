@@ -46,7 +46,7 @@ const siteConfig = {
         iconSrc: "/svg/youtube.svg",
       },
     ],
-    copyright: "Kelly Ruff | Kelly's Ruff Life | Certified Vet Technician | Animal Lover",
+    copyright: " Kelly Ruff Life | Certified Vet Technician | 760-696-1131",
     cta: {
       text: "Website by Dream Big Joe.",
       href: "https://dreambigjoe.com",
@@ -67,7 +67,9 @@ const siteConfig = {
     aboutParagraphThree:
       "Today, Kelly continues her journey in animal care with a fresh perspective, focusing on innovative and compassionate ways to improve the lives of pets and their owners. Her extensive experience and expertise allow her to provide exceptional care and understanding to animals in need.",
     aboutParagraphFour:
-      "Outside of her career, Kelly enjoys pilates, hiking, and working at Toscana and The Vintage Club. She cherishes her time with her boyfriend, Joey, and their beloved Chi-Weenie dog, Pretzel. Kelly is proud to call Palm Desert, CA, home and remains dedicated to making a positive impact in the community."
+      "Outside of her career, Kelly enjoys pilates, hiking, and working at Toscana and The Vintage Club. She cherishes her time with her boyfriend, Joey, and their beloved Chi-Weenie dog, Pretzel. Kelly is proud to call Palm Desert, CA, home and remains dedicated to making a positive impact in the community.",
+    aboutParagraphFive:
+    "You can reach me at my cell phone number at 760-696-1131 or my email at kelly@kellysrufflife.com"
   },    
   blogPage: {
     hero: {

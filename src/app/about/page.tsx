@@ -25,6 +25,7 @@ const AboutPage = () => {
         <p className="mb-4 text-xl">{aboutPage.aboutParagraphTwo}</p>
         <p className="mb-4 text-xl">{aboutPage.aboutParagraphThree}</p>
         <p className="mb-4 text-xl">{aboutPage.aboutParagraphFour}</p>
+        <p className="mb-4 text-xl">{aboutPage.aboutParagraphFive}</p>
         <hr className="mt-20" />
       </section>
     </div>
