@@ -46,7 +46,7 @@ const siteConfig = {
         iconSrc: "/svg/youtube.svg",
       },
     ],
-    copyright: " Kelly Ruff Life | Certified Vet Technician | 760-696-1131",
+    copyright: " Kellys Ruff Life | Certified Vet Technician | 760-696-1131",
     cta: {
       text: "Website by Dream Big Joe.",
       href: "https://dreambigjoe.com",
